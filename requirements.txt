@@ -1,0 +1,5 @@
+vtk>=9.7
+numpy
+PySide6>=6.8
+# facultatif : graphique du banc d'essai (bench_temps.png)
+matplotlib

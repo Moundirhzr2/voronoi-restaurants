@@ -1,0 +1,31 @@
+﻿ID,nom,X,Y,type,prix,note
+1,Chez Ali,120,250,Italien,€€,4.3
+2,Le Jardin,350,180,Français,€€€,4.7
+3,La Piazza,520,310,Italien,€,4.1
+4,Le Central,650,420,Français,€€,4.5
+5,Sushi House,760,160,Japonais,€€€,4.6
+6,La Table Verte,220,430,Végétarien,€€,4.4
+7,Chez Marco,470,500,Italien,€€,4.2
+8,Le Bistrot,90,120,Français,€,3.9
+9,Saveurs d'Orient,310,340,Oriental,€€,4.6
+10,Wok Express,590,120,Asiatique,€,4.0
+11,La Terrasse,800,360,Français,€€€,4.8
+12,Burger Factory,150,560,Burgers,€,4.2
+13,Le Petit Port,410,90,Fruits de mer,€€€,4.5
+14,Casa Latina,680,570,Mexicain,€€,4.3
+15,Green Bowl,540,590,Végétarien,€€,4.7
+16,La Maison Rouge,260,80,Français,€€,4.1
+17,Taj Mahal,720,500,Indien,€€,4.4
+18,Pizza Napoli,390,390,Italien,€,4.0
+19,Le Comptoir,610,260,Français,€€,4.2
+20,Tokyo Garden,850,250,Japonais,€€€,4.6
+21,La Bonne Fourchette,180,180,Français,€€,4.5
+22,Curry Palace,450,220,Indien,€€,4.3
+23,Le Petit Italien,300,520,Italien,€€,4.4
+24,Ocean Bleu,700,80,Fruits de mer,€€€€,4.7
+25,Le Coin Gourmand,560,450,Français,€€,4.0
+26,Asia Wok,820,430,Asiatique,€,4.1
+27,Falafel House,100,350,Oriental,€,4.5
+28,La Cantina,350,450,Mexicain,€€,4.2
+29,Le Potager,680,300,Végétarien,€€,4.6
+30,Grill & Co,250,600,Grillades,€€€,4.3

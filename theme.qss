@@ -1,0 +1,189 @@
+/* Thème sombre :
+   canvas #010102, surfaces #0f1011 > #191a1b, filets #23252a, texte #f7f8f8 / #d0d6e0 / #8a8f98,
+   un seul accent lavande #5e6ad2 (sélection, focus, action principale). Rayons : 8 px boutons, 12 px cartes. */
+
+* {
+    font-family: "Segoe UI";
+    font-size: 13px;
+    color: #d0d6e0;
+    outline: none;
+}
+
+QMainWindow, QWidget#racine, QDialog {
+    background: #010102;
+}
+
+QFrame#barre {
+    background: #010102;
+    border-bottom: 1px solid #23252a;
+}
+
+QFrame#explorer, QFrame#resultats {
+    background: #0f1011;
+}
+QFrame#explorer { border-right: 1px solid #23252a; }
+QFrame#resultats { border-left: 1px solid #23252a; }
+
+QScrollArea, QScrollArea > QWidget > QWidget {
+    background: transparent;
+    border: none;
+}
+
+QLabel#marque { color: #f7f8f8; font-size: 15px; font-weight: 600; }
+QLabel#sousmarque { color: #8a8f98; font-size: 13px; }
+
+QLabel[role="section"] { color: #8a8f98; font-size: 12px; font-weight: 600; }
+QLabel[role="titre"] { color: #f7f8f8; font-size: 20px; font-weight: 600; }
+QLabel[role="titre-vue"] { color: #f7f8f8; font-size: 17px; font-weight: 600; }
+QLabel[role="texte"] { color: #d0d6e0; font-size: 13px; }
+QLabel[role="discret"] { color: #8a8f98; font-size: 12px; }
+QLabel[role="valeur"] { color: #f7f8f8; font-family: "Consolas"; font-size: 13px; }
+QLabel[role="nom"] { color: #f7f8f8; font-size: 14px; font-weight: 600; }
+QLabel[role="nom-principal"] { color: #f7f8f8; font-size: 19px; font-weight: 600; }
+QLabel[role="distance"] { color: #f7f8f8; font-family: "Consolas"; font-size: 14px; }
+QLabel[role="distance-principale"] { color: #f7f8f8; font-family: "Consolas"; font-size: 22px; }
+
+QLabel[role="touche"] {
+    background: #141516;
+    border: 1px solid #34343a;
+    border-radius: 4px;
+    padding: 0px 5px;
+    color: #8a8f98;
+    font-family: "Consolas";
+    font-size: 11px;
+}
+
+QFrame[role="carte"] {
+    background: #0f1011;
+    border: 1px solid #23252a;
+    border-radius: 8px;
+}
+QFrame[role="carte"]:hover {
+    background: #141516;
+    border: 1px solid #3e3e44;
+}
+QFrame[role="carte"]:focus {
+    background: #141516;
+    border: 1px solid #5e69d1;
+}
+QFrame#cadre_vue { background: #010102; border: 1px solid #010102; }
+QFrame#cadre_vue[actif="true"] { border: 1px solid #5e69d1; }
+QFrame[role="carte-principale"] {
+    background: #141516;
+    border: 1px solid #34343a;
+    border-radius: 12px;
+}
+QFrame[role="panneau"] {
+    background: #0f1011;
+    border: 1px solid #23252a;
+    border-radius: 12px;
+}
+
+QPushButton {
+    background: #0f1011;
+    border: 1px solid #23252a;
+    border-radius: 8px;
+    padding: 7px 14px;
+    color: #f7f8f8;
+    font-weight: 500;
+}
+QPushButton:hover { background: #141516; border-color: #34343a; }
+QPushButton:pressed { background: #18191a; }
+QPushButton:focus { border-color: #5e69d1; }
+QPushButton:disabled { color: #62666d; border-color: #23252a; }
+
+QPushButton[role="primaire"] {
+    background: #5e6ad2;
+    border: 1px solid #5e6ad2;
+    color: #ffffff;
+}
+QPushButton[role="primaire"]:hover { background: #828fff; border-color: #828fff; }
+QPushButton[role="primaire"]:pressed { background: #5e69d1; }
+
+QPushButton[role="lien"] {
+    background: transparent;
+    border: none;
+    padding: 2px 4px;
+    color: #8a8f98;
+    font-size: 12px;
+}
+QPushButton[role="lien"]:hover { color: #f7f8f8; }
+QPushButton[role="lien"]:focus { color: #f7f8f8; text-decoration: underline; }
+
+QPushButton[role="bascule"] {
+    padding: 5px 0px;
+    color: #62666d;
+    font-family: "Consolas";
+}
+QPushButton[role="bascule"]:checked {
+    background: #18191a;
+    border-color: #34343a;
+    color: #f7f8f8;
+}
+
+QFrame[role="segments"] {
+    background: #010102;
+    border: 1px solid #23252a;
+    border-radius: 9px;
+}
+QPushButton[role="segment"] {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px 12px;
+    color: #8a8f98;
+}
+QPushButton[role="segment"]:hover { color: #d0d6e0; }
+QPushButton[role="segment"]:checked {
+    background: #18191a;
+    border: 1px solid #34343a;
+    color: #f7f8f8;
+}
+QPushButton[role="segment"]:focus { border-color: #5e69d1; }
+
+QSlider { min-height: 22px; }
+QSlider::groove:horizontal { height: 4px; background: #23252a; border-radius: 2px; }
+QSlider::sub-page:horizontal { background: #5e6ad2; border-radius: 2px; }
+QSlider::handle:horizontal {
+    width: 14px; height: 14px; margin: -5px 0px;
+    border-radius: 7px; background: #f7f8f8;
+}
+QSlider::handle:horizontal:hover { background: #ffffff; }
+QSlider::handle:horizontal:focus { border: 2px solid #828fff; }
+
+QScrollBar:vertical { background: transparent; width: 8px; margin: 2px; }
+QScrollBar::handle:vertical { background: #34343a; border-radius: 3px; min-height: 32px; }
+QScrollBar::handle:vertical:hover { background: #3e3e44; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+
+QStatusBar {
+    background: #010102;
+    border-top: 1px solid #23252a;
+}
+QStatusBar::item { border: none; }
+QStatusBar QLabel { color: #8a8f98; font-family: "Consolas"; font-size: 12px; padding: 0px 8px; }
+
+QLabel#infobulle {
+    background: #18191a;
+    border: 1px solid #3e3e44;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #d0d6e0;
+}
+QLabel#toast {
+    background: #18191a;
+    border: 1px solid #5e69d1;
+    border-radius: 8px;
+    padding: 9px 14px;
+    color: #f7f8f8;
+}
+
+QMessageBox { background: #0f1011; }
+QMessageBox QLabel { color: #d0d6e0; }
+QToolTip {
+    background: #18191a;
+    color: #d0d6e0;
+    border: 1px solid #3e3e44;
+    padding: 4px 6px;
+}
